@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(img/Background_1920x1080_pixels_0.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 32px;
+    position: sticky;
+    top: 0;
+    background: rgba(117, 101, 167, 0.5);
+    padding: 10px 0;
+}
+
+header h1 img {
+    display: block;
+    width: 200px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    list-style: none;
+}
+
+header nav li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition:  all 0,3s ease;
+}
+
+header li a:hover {
+    box-shadow: 0px 0px 10px #f3f3f3;
+    border-radius: 25%;
+    border: inset 2px #7565a7;
+    padding: 5px;
+}
+
+.container {
+    max-width: 100%;
+    width: 80%;
+    margin: auto;
+}
+
+header .container,
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section {
+    padding: 48px 20px;
+}
+
+h2 {
+    font-family: 'Cinzel Decorative', serif;
+    color: #7565a7;
+    height: max-content;
+}
+
+.banner {
+    height: 500PX;
+    width: 500px;
+    border-radius: 50%;
+    border: solid 2px #7565a7;
+    box-shadow: 0 0 50px #c7a5e0;
+}
+
+.description {
+    background-color: aliceblue;
+    border-radius: 20px;
+    padding: 20px;
+    width: 60%;
+    border: solid 2px #7565a7;
+    box-shadow: 0 0 50px #c7a5e0;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: justify;
+    
+}
+
+.guia {
+    height: 200px;
+    float: right;
+}
+
+.guia:hover{
+    content: url(img/Character_concept_sheet_-_library-removebg-preview.png);
+}
+
+#Doações .container{
+    display: block;
+    justify-content: space-between;
+    font-size: 24px;
+
+}
+
+form input,
+textarea,
+form button{
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+#Doações .container h2{
+    color: #d7d5dc;
+}
+
+form textarea{
+    resize: none;
+    height: 180px;
+    width: 320px;
+}
+
+form button{
+    background-color: #7565a7;
+    color: aliceblue;
+    cursor: pointer;
+    }
+
+form button:hover{
+        background-color: #d7d5dc;
+    }
+
+input :focus, textarea:focus{
+    outline-color:black;
+}
+
+footer{
+    background-color: #7565a7;
+    color: #d7d5dc;
+    padding: 16px;
+    text-align: center;
+    position: sticky;
+    bottom:0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Camelot {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .universo {
+        width: 90%;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    header nav li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+
+
+
+/*header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #450154;
+}
+
+li a {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #850aa0;
+}
+
+header nav li a,
+header h1,
+.universo {
+    
+    font-weight:bolder;
+    color: #1a0429;
+}
+
+h1,
+header nav li a {
+    font-size: 42px;
+    text-decoration: none;
+}
+
+header nav li{
+    display:inline;
+    margin-left: 16px;
+    background-color: #c1a7d3;
+    background-size: cover;
+    box-shadow: 0 0 50px #c3add2;
+    margin: 10px;
+    }
+
+header nav li a{
+    font-size: 24px; 
+}
+
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .container{
+    display: flex;
+    align-items: flex-start;
+    justify-content:space-between;
+    
+}
+
+section{
+    padding: 24px 0;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+section h2{
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.Character li{
+    display: inline;
+}
+
+
+
+section li img{
+    width: 100px;
+    border: none;
+    box-shadow: none;
+    border-radius: none;
+}
+
+
+
